@@ -94,7 +94,7 @@ add_shortcode( 'hide_me', 'hide_me_shortcode');
 add_action( 'wp_enqueue_scripts', 'hide_me_scripts' );
 
 function hide_me_scripts() {
-	wp_enqueue_script( 'hide_me_init', plugins_url().'/hide_me/js/init.js', array());
+	wp_enqueue_script( 'hide_me_init', plugins_url().'/hide_me/js/init.js', array('jquery'));
 	wp_enqueue_style('hide_me_stlye', plugins_url().'/hide_me/css/style.css');
 }
 
